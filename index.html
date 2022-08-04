@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Terminplaner</title>
+  </head>
+  <body>
+    <div id="container">
+      <div class="katja">
+        <h1 class="terminPlaner">DER TERMINPLANER</h1>
+      </div>
+      <div id="header">
+        <div id="monthDisplay"></div>
+        <div>
+          <button id="backButton">zurück</button>
+          <button id="nextButton">weiter</button>
+        </div>
+      </div>
+      <div id="weekdays">
+        <div>Sonntag</div>
+        <div>Montag</div>
+        <div>Dienstag</div>
+        <div>Mittwoch</div>
+        <div>Donnerstag</div>
+        <div>Freitag</div>
+        <div>Samstag</div>
+      </div>
+      <div id="calendar"></div>
+    </div>
+    <div id="newEventModal">
+      <h2>Neue Termin</h2>
+      <input id="enventTitelInput" placeholder="Termin eintragen" />
+      <button id="saveButton">Speichern</button>
+      <button id="cancelButton">Abbrechen</button>
+    </div>
+
+    <div id="deleteEventModal">
+      <h2>Veranstaltung</h2>
+
+      <p id="eventText"></p>
+      <button id="deleteButton">Löschen</button>
+      <button id="closeButton">Schließen</button>
+    </div>
+    <div id="modalBackDrop"></div>
+    <script src="./script.js"></script>
+  </body>
+</html>
